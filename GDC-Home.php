@@ -17,7 +17,7 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand"><img src="4b5d99c4-2f06-45be-88b2-5e4bb39f9885.png" id="logo"> GDC AIRWAYS</a>
+				<a href="#" class="navbar-brand"><img src="4b5d99c4-2f06-45be-88b2-5e4bb39f9885.png" id="logo">OMAR AIRWAYS</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        		<span class="sr-only">Toggle navigation</span>
 	        		<span class="icon-bar"></span>
@@ -70,18 +70,25 @@
         <form action="GDC-HomeConn.php" method="POST"> 
           <select name="origin" class="drop" id="ori">
         	 <option value="Origin">Origin</option>
-        	 <option value="Mumbai">MUMBAI</option>
+        	 <option value="nairobi">NAIROBI</option>
         	 <option value="Delhi">DELHI</option>
-        	 <option value="Banglore">BANGLORE</option>
-        	 <option value="Kolkata">KOLKATA</option>
+        	 <option value="cairo">CAIRO</option>
+           <option value="adis ababa">ADIS ABABA</option>
+           <option value="capetown">CAPETOWN</option>
+        	 <option value="zanzibar">ZANZIBAR</option>
+           <option value="banglore">BANGLORE</option>
+
           </select>
           <i class="fas fa-exchange-alt"></i>
           <select name="destination" class="drop" id="dest">
           	<option value="Destination">Destination</option>
           	<option value="Mumbai">MUMBAI</option>
-          	<option value="Delhi">DELHI</option>
-          	<option value="Banglore">BANGLORE</option>
-          	<option value="Kolkata">KOLKATA</option>
+          	<option value="nairobi">NAIROBI</option>
+          	<option value="Dar-es-salaam">Dar-es-salaam</option>
+          	<option value="lagos">lAGOS</option>
+            <option value="delhi">DELHI</option>
+          	<option value="kampala">KAMPALA</option>
+
           </select>
           <input type="number" class="drop" name="passengers" step="1" min="1" max="10" placeholder="Number Of Passengers">
           <span class="lab">Departure:</span>
@@ -204,7 +211,7 @@
         $dbhost="localhost";
         $dbuser="devang";
         $dbpass="qwerty";
-        $db="gdcairways";
+        $db="air management system";
         $conn=mysqli_connect($dbhost,$dbuser,$dbpass,$db);
         if(!$conn)
         {
